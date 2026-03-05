@@ -133,14 +133,22 @@ gsap.timeline({
 It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
             </div>
             <div className="flex gap-30 justify-evenly items-center">
-              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center w-50 h-15 gap-2">
-                <img src="/github.svg" className="w-10 invert h-10" alt="" />
-                <p>View on GitHub</p>
+              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
+<a
+  href="https://github.com/Rohit0265/meeting"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
+  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
+>
+  <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
+  <p>View on GitHub</p>
+</a>
               </div>
               <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
           shadow-lg hover:shadow-blue-500/40">
-                  <a href="YOUR_LIVE_LINK" target="_blank"
+                  <a href="https://meeting-two-lac.vercel.app/" target="_blank"
     className="">
     🚀 &nbsp; Live Demo
                 </a>
@@ -181,15 +189,26 @@ It features secure authentication, instant meeting links, and smooth video strea
                         <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
             <div>
 
-              <h1 className="text-5xl font-bold pb-15">1. YOOM - Zoom Like Meeting Platform</h1>
-              <p className="text-2xl text-gray-400 pb-15">This project is a fully functional Zoom Clone that enables users to create, join, and manage video meetings in real time.
-It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
+              <h1 className="text-5xl font-bold pb-15">2. Full Stack Ecommerce Web Application</h1>
+              <p className="text-2xl text-gray-400 pb-15">Developed a full-stack eCommerce web application with features like user authentication, product listing, cart management, and order processing. The platform provides a seamless shopping experience with a responsive interface and secure backend APIs for handling transactions and data.</p>
             </div>
             <div className="flex gap-30 justify-evenly items-center">
-              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center w-50 h-15 gap-2">
-                <img src="/github.svg" className="w-10 invert h-10" alt="" />
-                <p>View on GitHub</p>
+                            <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
+<a
+  href="https://github.com/Rohit0265/Full-Stack-E-Commerce-Platform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
+  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
+>
+  <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
+  <p>View on GitHub</p>
+</a>
               </div>
+
+
+
+              {/* </div> */}
               {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
           shadow-lg hover:shadow-blue-500/40">
@@ -208,14 +227,21 @@ It features secure authentication, instant meeting links, and smooth video strea
             <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
             <div>
 
-              <h1 className="text-5xl font-bold pb-15">1. YOOM - Zoom Like Meeting Platform</h1>
-              <p className="text-2xl text-gray-400 pb-15">This project is a fully functional Zoom Clone that enables users to create, join, and manage video meetings in real time.
-It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
+              <h1 className="text-5xl font-bold pb-15">1. Edemy - LMS Platform</h1>
+              <p className="text-2xl text-gray-400 pb-15">Edemy is a Learning Management System (LMS) that allows users to explore courses, enroll in them, and track their learning progress. It provides an organized platform for managing educational content and improving the online learning experience.</p>
             </div>
             <div className="flex gap-30 justify-evenly items-center">
-              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center w-50 h-15 gap-2">
-                <img src="/github.svg" className="w-10 invert h-10" alt="" />
-                <p>View on GitHub</p>
+<div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
+<a
+  href="https://github.com/Rohit0265/Full-Stack-LMS-Platform"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
+  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
+>
+  <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
+  <p>View on GitHub</p>
+</a>
               </div>
               {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
@@ -228,7 +254,7 @@ It features secure authentication, instant meeting links, and smooth video strea
             </div>
             </div>
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="https://images.pexels.com/photos/13242404/pexels-photo-13242404.jpeg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="https://images.pexels.com/photos/3829227/pexels-photo-3829227.jpeg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
@@ -247,7 +273,7 @@ It features secure authentication, instant meeting links, and smooth video strea
             <div className="flex panel bg-[rgb(18,18,18)] pt-15 pb-25">
 
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/photo2.jpg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="https://images.pexels.com/photos/16752645/pexels-photo-16752645.jpeg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
@@ -262,14 +288,21 @@ It features secure authentication, instant meeting links, and smooth video strea
                         <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
             <div>
 
-              <h1 className="text-5xl font-bold pb-15">1. YOOM - Zoom Like Meeting Platform</h1>
-              <p className="text-2xl text-gray-400 pb-15">This project is a fully functional Zoom Clone that enables users to create, join, and manage video meetings in real time.
-It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
+              <h1 className="text-5xl font-bold pb-15">4. Vulns Web : Website Vulnerability Scanner</h1>
+              <p className="text-2xl text-gray-400 pb-15">Vulns Web is a website vulnerability scanner designed to detect common security flaws such as XSS, SQL Injection, and Path Traversal. It analyzes web applications and highlights potential risks to help developers strengthen their security.</p>
             </div>
             <div className="flex gap-30 justify-evenly items-center">
-              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center w-50 h-15 gap-2">
-                <img src="/github.svg" className="w-10 invert h-10" alt="" />
-                <p>View on GitHub</p>
+<div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
+<a
+  href="https://github.com/Rohit0265/Website-Vulnerability-Tester-FrontEnd"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
+  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
+>
+  <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
+  <p>View on GitHub</p>
+</a>
               </div>
               {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
