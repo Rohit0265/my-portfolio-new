@@ -5,7 +5,7 @@ import Button from "./ui/button"
 import emailjs from "@emailjs/browser"; 
 import { toast } from "sonner"
 import {motion} from "framer-motion"
-// Example ContactForm Component
+
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -18,10 +18,10 @@ const handleSubmit = (e) => {
   e.preventDefault();
 
   emailjs.send(
-    "service_3ozd96f",
-    "template_46rledc",
+    import.meta.env.VITE_PUBLIC_SERVICE_ID,
+    import.meta.env.VITE_PUBLIC_TEMPLATE_ID,
     formData,
-    "Ph0igdzUB_LOB2xoW"
+    import.meta.env.VITE_PUBLIC_ME_ID
   ).then(
     (result) => {
       toast("Message Sent");
