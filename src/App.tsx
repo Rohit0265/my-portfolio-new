@@ -1,9 +1,5 @@
 import { useGSAP } from "@gsap/react"
-import Fotter from "./components/Fotter"
-import Hero from "./components/Hero"
 import MyIntro from "./components/myIntro"
-import Myprojects from "./components/myProjects"
-import Navbar from "./components/Navbar"
 import gsap from "gsap"
 import { ScrollSmoother } from "gsap/ScrollSmoother"
 gsap.registerPlugin(useGSAP, ScrollSmoother);
@@ -25,10 +21,10 @@ useGSAP(()=>{
   return (
         <div id="smooth-wrapper">
       <div id="smooth-content">
-      <Navbar/>
+      {/* <Navbar/> */}
       <MyIntro/>
       {/* <Myprojects/> */}
-      <Hero/>
+      {/* <Hero/> */}
       </div>
     </div>
   )
