@@ -4,7 +4,9 @@ import './App.css'
 import App from './App.tsx'
 import { Toaster } from 'sonner'
 
+
 createRoot(document.getElementById('root')!).render(
+  
   <StrictMode>
     <App />
     <Toaster /> 

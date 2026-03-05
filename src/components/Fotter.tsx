@@ -1,5 +1,4 @@
 import { ArrowUpToLine } from "lucide-react"
-import Allrightreserved from "./allrightreserved"
 import ISTClock from "./Time"
 
 const Fotter = () => {
@@ -18,10 +17,16 @@ const Fotter = () => {
       </h1>
       <div className='h-[1px] w-[70px] bg-gray-600'/>
       <div className='flex pt-3 text-gray-300 flex-col '>
-          <p className='text-gray-300 pb-3 gap-2 flex'>
+          <p onClick={()=> window.scrollTo({
+            top:3700,
+            behavior:"smooth"
+          })} className='text-gray-300 pb-3 gap-2 flex'>
           ABOUT ME
           </p> 
-          <p className='text-gray-300 pb-3 gap-2 flex items-center'>
+          <p onClick={()=> window.scrollTo({
+            top:4650,
+            behavior:"smooth"
+          })} className='text-gray-300 pb-3 gap-2 flex items-center'>
           MY WORKS
           </p>
 
@@ -35,7 +40,7 @@ const Fotter = () => {
       <div className='h-[1px] w-[80px] bg-gray-600'/>
       <div className='flex flex-col'>
 
-        <a className='text-gray-300 pt-2 pb-3 gap-2 flex items-center' href="">
+        <a target="_blank" className='text-gray-300 pt-2 pb-3 gap-2 flex items-center' href="https://github.com/Rohit0265">
           Github
             <img width="25px" className='invert' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
           
@@ -43,7 +48,7 @@ const Fotter = () => {
         </a>
 
 
-        <a className='text-gray-300 gap-2 flex items-center' href="">
+        <a className='text-gray-300 gap-2 flex items-center' target="_blank" href="https://www.linkedin.com/in/rohit-mathur-9a80b2296">
           Linkedin
             <img width="25px" className='' src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" />
           

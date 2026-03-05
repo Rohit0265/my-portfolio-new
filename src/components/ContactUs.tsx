@@ -39,14 +39,14 @@ const handleSubmit = (e) => {
         <motion.h2 
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.2,delay:0.5 }}
+        transition={{ duration: 0.2,delay:0.2 }}
            className='text-[80px] pb-10 font-bold text-center'>Let's Work Together</motion.h2>
     <div className='ml-[30%] rounded-[40px] mr-[30%] shadow-lg shadow-cyan-500/50 bg-[rgb(18,17,17)] '>
 
     <motion.form 
     initial={{ opacity: 0, x: 100 }}
     whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.2,delay:0.5 }}
+    transition={{ duration: 0.2,delay:0.2 }}
     
     className='flex flex-col pl-25 pr-25 pt-5 pb-7' onSubmit={handleSubmit}>
         <p className='text-[40px] text-center pb-5'>Say Hello 👋 !!!</p>

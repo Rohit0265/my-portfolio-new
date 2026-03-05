@@ -1,17 +1,35 @@
+import { useGSAP } from "@gsap/react"
 import Fotter from "./components/Fotter"
 import Hero from "./components/Hero"
 import MyIntro from "./components/myIntro"
 import Myprojects from "./components/myProjects"
 import Navbar from "./components/Navbar"
+import gsap from "gsap"
+import { ScrollSmoother } from "gsap/ScrollSmoother"
+gsap.registerPlugin(useGSAP, ScrollSmoother);
 
 const App = () => {
+
+
+useGSAP(()=>{
+      ScrollSmoother.create({
+      wrapper: "#smooth-wrapper",
+      content: "#smooth-content",
+      smooth: 5,
+      effects: true,
+    });
+})
+
+
+
   return (
-    <div>
+        <div id="smooth-wrapper">
+      <div id="smooth-content">
       <Navbar/>
       <MyIntro/>
       {/* <Myprojects/> */}
       <Hero/>
-      
+      </div>
     </div>
   )
 }

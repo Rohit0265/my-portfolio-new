@@ -80,61 +80,6 @@ I’m a full-stack developer passionate about building scalable web applications
 I also explore cybersecurity and web application security, studying common vulnerabilities such as XSS, SQL injection, and path traversal to better understand how systems can be protected.
 
         </motion.p>
-{/* 
-<div className="bg-black text-white text-2xl relative"
-ref={containerRef}
-// style={{position: 'relative'}}
->
-  <VariableProximity
-    label={'Hover me! And then star React Bits on GitHub, or else...'}
-    className={'variable-proximity-demo'}
-    fromFontVariationSettings="'wght' 400, 'opsz' 9"
-    toFontVariationSettings="'wght' 1000, 'opsz' 40"
-    containerRef={containerRef}
-    radius={100}
-    falloff='linear'
-    // falloff="gaussian"
-/>
-</div> */}
-
-
-        {/* <div className="flex text-white  justify-evenly items-center mt-25">
-            <motion.section 
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5}}
-            
-            className="w-50 h-25 bg-gray-800 rounded-4xl transition-all duration-150  justify-evenly cursor-pointer items-center flex">
-                <p className="text-[25px] flex flex-col justify-center items-center">
-                    <span>
-                My 
-                    </span>
-                   <span>
-                    
-                Github 
-                   </span>
-                </p>
-                <img className="invert h-[70px]" src="/github.svg" alt="" />
-            </motion.section>
-            <motion.section
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5}}
-            
-            
-            className="w-50 h-25 bg-gray-800 cursor-pointer rounded-4xl transition-all duration-150  justify-evenly items-center flex">
-                <p className="text-[25px] flex flex-col justify-center items-center">
-               <span className="">
-                My 
-                </span> 
-                <span>
-                Linkein
-                </span>
-                </p>
-                <img className="invert h-[60px]" src="/linkedin.svg" alt="" />
-            </motion.section>
-        </div> */}
-
       </div>
 
       <div className="w-1/2 bg-black flex flex-col  pr-45 pl-10 justify-center">

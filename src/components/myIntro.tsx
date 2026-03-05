@@ -18,12 +18,12 @@ const MyIntro = () => {
 
   useGSAP(() => {
 
-    ScrollSmoother.create({
-      wrapper: "#smooth-wrapper",
-      content: "#smooth-content",
-      smooth: 3,
-      effects: true,
-    });
+    // ScrollSmoother.create({
+    //   wrapper: "#smooth-wrapper",
+    //   content: "#smooth-content",
+    //   smooth: 3,
+    //   effects: true,
+    // });
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -62,8 +62,10 @@ const MyIntro = () => {
   }, { scope: container });
 
   return (
-    <div id="smooth-wrapper" ref={container}>
-      <div id="smooth-content">
+    // <div id="smooth-wrapper" ref={container}>
+    //   <div id="smooth-content">
+<div ref={container}>
+
 
         <div className="test w-screen h-screen relative overflow-hidden">
           <img
@@ -85,9 +87,9 @@ const MyIntro = () => {
         <div className="h-[200px]" />
         <ContactForm/>
         <Fotter/>
-
-      </div>
-    </div>
+</div>
+    //   {/* </div>
+    // </div> */}
   );
 };
 
