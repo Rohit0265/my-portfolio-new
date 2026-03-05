@@ -52,7 +52,7 @@ const tech = [
 const MYDETAILS = () => {
     const containerRef = useRef(null);
   return (
-    <div className="flex h-screen bg-yellow-300">
+    <div className="flex h-screen">
       
       <div className="w-1/2  bg-black flex flex-col pl-45 pr-10 justify-center">
 

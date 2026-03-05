@@ -9,6 +9,7 @@ import Myprojects from "./myProjects";
 import MYDETAILS from "./Mystack";
 import ContactForm from "./ContactUs";
 import Fotter from "./Fotter";
+import Mylandpage from "./Landingpage";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother);
 
@@ -67,16 +68,17 @@ const MyIntro = () => {
         <div className="test w-screen h-screen relative overflow-hidden">
           <img
             className="w-full h-full object-cover"
-            src="https://media.macphun.com/img/uploads/customer/blog/1749205785/17492059426842c3b6353633.46592977.jpg?q=85&w=1680"
+            src="https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
             alt=""
           />
 
-          <h1 className="head absolute z-50 text-white text-[200px] leading-tight left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2 league-gothic">
-            ROHIT MATHUR
+          <h1 className="head absolute z-50 text-gray-300/90 text-[200px] leading-tight left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2 ">
+            𝓗𝓔𝓛𝓛𝓞
           </h1>
         </div>
 
         {/* Extra space to allow scrolling */}
+        <Mylandpage/>
       <Myprojects/>
         <div className="h-[500px]" />
         <MYDETAILS/>

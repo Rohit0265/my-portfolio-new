@@ -124,10 +124,7 @@ gsap.timeline({
 </section>
 
 </div>
-
-
-        {/* {[1,2,3,4].map((item)=>(
-            <div key={item} className="flex panel bg-[rgb(18,18,18)] pb-25">
+          <div className="flex panel bg-[rgb(18,18,18)] pt-15 pb-25">
             <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
             <div>
 
@@ -151,53 +148,12 @@ It features secure authentication, instant meeting links, and smooth video strea
             </div>
             </div>
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/pmhoto2.jpg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/photo2.jpg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
                 className="w-150 h-fill border overflow-hidden rounded-md"
-                src="/mp2.mp4"
-                autoPlay
-                muted
-                loop
-              />
-               </div>
-            </div>
-            </div>
-        ))} */}
-
-
-
-          <div className="flex panel bg-[rgb(18,18,18)] pb-25">
-            <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
-            <div>
-
-              <h1 className="text-5xl font-bold pb-15">1. YOOM - Zoom Like Meeting Platform</h1>
-              <p className="text-2xl text-gray-400 pb-15">This project is a fully functional Zoom Clone that enables users to create, join, and manage video meetings in real time.
-It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
-            </div>
-            <div className="flex gap-30 justify-evenly items-center">
-              <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center w-50 h-15 gap-2">
-                <img src="/github.svg" className="w-10 invert h-10" alt="" />
-                <p>View on GitHub</p>
-              </div>
-              <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
-          transition-all duration-300 text-white font-semibold 
-          shadow-lg hover:shadow-blue-500/40">
-                  <a href="YOUR_LIVE_LINK" target="_blank"
-    className="">
-    🚀 &nbsp; Live Demo
-                </a>
-              </div>
-            </div>
-            </div>
-            <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/pmhoto2.jpg" alt="" />
-
-               <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                <video
-                className="w-150 h-fill border overflow-hidden rounded-md"
-                src="/mp2.mp4"
+                src="/p2.mp4"
                 autoPlay
                 muted
                 loop
@@ -206,14 +162,16 @@ It features secure authentication, instant meeting links, and smooth video strea
             </div>
             </div>
 
-          <div  className="flex panel bg-[rgb(18,18,18)] pb-25">
+            <br />
+
+          <div  className="flex panel bg-[rgb(18,18,18)] pt-15 pb-25">
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/pmhoto2.jpg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="https://images.pexels.com/photos/13242404/pexels-photo-13242404.jpeg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
                 className="w-150 h-fill border overflow-hidden rounded-md"
-                src="/mp2.mp4"
+                src="/Ecomm.mp4"
                 autoPlay
                 muted
                 loop
@@ -232,19 +190,21 @@ It features secure authentication, instant meeting links, and smooth video strea
                 <img src="/github.svg" className="w-10 invert h-10" alt="" />
                 <p>View on GitHub</p>
               </div>
-              <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
+              {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
           shadow-lg hover:shadow-blue-500/40">
                   <a href="YOUR_LIVE_LINK" target="_blank"
     className="">
     🚀 &nbsp; Live Demo
                 </a>
-              </div>
+              </div> */}
             </div>
             </div>
             </div>
 
-            <div className="flex panel bg-[rgb(18,18,18)] pb-25">
+            <br />
+
+          <div className="flex panel bg-[rgb(18,18,18)] pt-15 pb-25">
             <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
             <div>
 
@@ -257,23 +217,23 @@ It features secure authentication, instant meeting links, and smooth video strea
                 <img src="/github.svg" className="w-10 invert h-10" alt="" />
                 <p>View on GitHub</p>
               </div>
-              <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
+              {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
           shadow-lg hover:shadow-blue-500/40">
                   <a href="YOUR_LIVE_LINK" target="_blank"
     className="">
     🚀 &nbsp; Live Demo
                 </a>
-              </div>
+              </div> */}
             </div>
             </div>
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/pmhoto2.jpg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="https://images.pexels.com/photos/13242404/pexels-photo-13242404.jpeg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
                 className="w-150 h-fill border overflow-hidden rounded-md"
-                src="/mp2.mp4"
+                src="/Edemy.mp4"
                 autoPlay
                 muted
                 loop
@@ -282,15 +242,17 @@ It features secure authentication, instant meeting links, and smooth video strea
             </div>
             </div>
 
-            <div className="flex panel bg-[rgb(18,18,18)] pb-25">
+            <br />
+
+            <div className="flex panel bg-[rgb(18,18,18)] pt-15 pb-25">
 
             <div className="relative w-1/2">
-               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/pmhoto2.jpg" alt="" />
+               <img className="w-200 rounded-xl blur-[5px]  my-auto mx-auto h-130 object-cover" src="/photo2.jpg" alt="" />
 
                <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                 <video
                 className="w-150 h-fill border overflow-hidden rounded-md"
-                src="/mp2.mp4"
+                src="/VulnsWeb.mp4"
                 autoPlay
                 muted
                 loop
@@ -309,14 +271,14 @@ It features secure authentication, instant meeting links, and smooth video strea
                 <img src="/github.svg" className="w-10 invert h-10" alt="" />
                 <p>View on GitHub</p>
               </div>
-              <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
+              {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
           transition-all duration-300 text-white font-semibold 
           shadow-lg hover:shadow-blue-500/40">
                   <a href="YOUR_LIVE_LINK" target="_blank"
     className="">
     🚀 &nbsp; Live Demo
                 </a>
-              </div>
+              </div> */}
             </div>
             </div>
             </div>

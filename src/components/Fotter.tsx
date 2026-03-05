@@ -1,10 +1,15 @@
+import { ArrowUpToLine } from "lucide-react"
 import Allrightreserved from "./allrightreserved"
+import ISTClock from "./Time"
 
 const Fotter = () => {
   return (
+
+    <>
+
     <div className='w-screen pt-30 h-[400px] bg-black flex '>
 
-<div className="h-[1px] bg-gray-600 w-full absolute"/>
+      <div className="h-[1px] bg-gray-600 w-full absolute"/>
 
 
       <div className='w-1/2 flex flex-col pl-30 pt-5 justify-center items-center'>
@@ -23,7 +28,7 @@ const Fotter = () => {
       </div>
       </div>
 
-      <div className='w-1/2 pt-5 flex flex-col justify-center items-center'>
+      <div className='w-1/2 pt-5 flex flex-col justify-center '>
       <h1 className='text-white text-2xl'>
       Socials
       </h1>
@@ -47,11 +52,29 @@ const Fotter = () => {
 
       </div>
       </div>
-        <div>
-          <Allrightreserved/>
-        </div>
+<div className="fixed bottom-10 right-40 flex items-center justify-center h-[50px] w-[50px] rounded-full border cursor-pointer bg-gray-200/25 hover:bg-white/10 transition">
+  <button
+    className="text-white flex items-center justify-center w-full h-full"
+    onClick={() =>
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    }
+  >
+    <ArrowUpToLine />
+  </button>
+</div>
 
     </div>
+
+    <div>
+      <h1 className="bg-black  text-center text-gray-300">All Right Reserved &copy; 2026</h1>
+      <ISTClock/>
+    </div>
+
+</>
+
   )
 }
 
