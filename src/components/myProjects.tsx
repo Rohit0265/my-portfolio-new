@@ -21,6 +21,9 @@ const Myprojects = () => {
   const container = useRef(null);
 
   useGSAP(() => {
+
+
+    if (window.innerWidth < 768) return;
     const panels = gsap.utils.toArray(".panel");
 
 
@@ -103,224 +106,301 @@ const Myprojects = () => {
   return (
     <div className='bg-black' ref={stack}>
 
-      <div className='bg-black z-90'>
-        <section className="relative">
-          <div
-            ref={sectionRef}
-            className="flex items-center justify-center bg-black"
-          >
-            <h1
-              ref={textRef}
-              className="text-[90px] bg-black uppercase font-bold tracking-tight text-transparent"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, white 50%, #4b5563 50%)",
-                backgroundSize: "200% 100%",
-                backgroundPosition: "100% 0%",
-                backgroundClip: "text",
-                WebkitBackgroundClip: "text",
-              }}
-            >
-              My selected works    </h1>
-          </div>
-        </section>
+      <div className="bg-black z-90">
+  <section className="relative">
+    <div
+      ref={sectionRef}
+      className="flex items-center justify-center bg-black px-4"
+    >
+      <h1
+        ref={textRef}
+        className="text-[40px] sm:text-[55px] md:text-[70px] lg:text-[90px] bg-black uppercase font-bold tracking-tight text-transparent text-center"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, white 50%, #4b5563 50%)",
+          backgroundSize: "200% 100%",
+          backgroundPosition: "100% 0%",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+        }}
+      >
+        My Selected Works
+      </h1>
+    </div>
+  </section>
+</div>
+<div className="flex flex-col lg:flex-row panel transform-gpu bg-[rgb(18,18,18)] mt-10 pb-20 gap-10">
 
-      </div>
-      <div className="flex panel transform-gpu bg-[rgb(18,18,18)] mt-15 pb-25">
-        <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
-          <div>
+  {/* TEXT SIDE */}
+  <div className="w-full lg:w-1/2 flex flex-col text-white px-6 lg:pl-20 justify-center order-2 lg:order-1">
 
-            <h1 className="text-5xl font-bold pb-15">1. YOOM - Zoom Like Meeting Platform</h1>
-            <p className="text-2xl text-gray-400 pb-15">This project is a fully functional Zoom Clone that enables users to create, join, and manage video meetings in real time.
-              It features secure authentication, instant meeting links, and smooth video streaming powered by Stream’s real-time infrastructure.</p>
-          </div>
-          <div className="flex gap-30 justify-evenly items-center">
-            <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
-              <a
-                href="https://github.com/Rohit0265/meeting"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
-  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
-              >
-                <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
-                <p>View on GitHub</p>
-              </a>
-            </div>
-            <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
-          transition-all duration-300 text-white font-semibold 
-          shadow-lg hover:shadow-blue-500/40">
-              <a href="https://meeting-two-lac.vercel.app/" target="_blank"
-                className="">
-                🚀 &nbsp; Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="relative w-1/2">
-          <img className="w-200 rounded-xl blur-[5px] my-auto mx-auto h-130 object-cover" src="/photo2.jpg" alt="" />
+    <div>
+      <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6">
+        1. YOOM - Zoom Like Meeting Platform
+      </h1>
 
-          <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video
-              className="w-150 h-fill border overflow-hidden rounded-md"
-              src="/p2.webm"
-              autoPlay
-              playsInline
-              muted
-              loop
-            />
-          </div>
-        </div>
-      </div>
+      <p className="text-base md:text-lg lg:text-2xl text-gray-400 mb-8">
+        This project is a fully functional Zoom Clone that enables users to
+        create, join, and manage video meetings in real time.
+        It features secure authentication, instant meeting links,
+        and smooth video streaming powered by Stream’s real-time infrastructure.
+      </p>
+    </div>
 
-      <br />
+    {/* BUTTONS */}
+    <div className="flex flex-wrap gap-4 items-center">
 
-      <div className="flex panel transform-gpu bg-[rgb(18,18,18)] pt-15 pb-25">
-        <div className="relative w-1/2">
-          <img className="w-200 rounded-xl blur-[5px] my-auto mx-auto h-130 object-cover" src="/1.webp" alt="" />
+      <a
+        href="https://github.com/Rohit0265/meeting"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 bg-gray-900 border border-white rounded-xl px-5 py-3 hover:bg-gray-700 transition"
+      >
+        <img src="/github.svg" className="w-6 h-6 invert" />
+        View GitHub
+      </a>
 
-          <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video
-              className="w-150 h-fill border overflow-hidden rounded-md"
-              src="/Ecomm.webm"
-              autoPlay
-              playsInline={true}
-              muted={true}
-              loop={true}
-            />
-          </div>
-        </div>
-        <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
-          <div>
+      <a
+        href="https://meeting-two-lac.vercel.app/"
+        target="_blank"
+        className="px-6 py-3 bg-blue-600 rounded-xl text-white font-semibold hover:bg-blue-500 transition"
+      >
+        🚀 Live Demo
+      </a>
 
-            <h1 className="text-5xl font-bold pb-15">2. Full Stack Ecommerce Web Application</h1>
-            <p className="text-2xl text-gray-400 pb-15">Developed a full-stack eCommerce web application with features like user authentication, product listing, cart management, and order processing. The platform provides a seamless shopping experience with a responsive interface and secure backend APIs for handling transactions and data.</p>
-          </div>
-          <div className="flex gap-30 justify-evenly items-center">
-            <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
-              <a
-                href="https://github.com/Rohit0265/Full-Stack-E-Commerce-Platform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
-  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
-              >
-                <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
-                <p>View on GitHub</p>
-              </a>
-            </div>
+    </div>
+
+  </div>
 
 
+  {/* VIDEO SIDE */}
+  <div className="relative w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2">
 
-            {/* </div> */}
-            {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
-          transition-all duration-300 text-white font-semibold 
-          shadow-lg hover:shadow-blue-500/40">
-                  <a href="YOUR_LIVE_LINK" target="_blank"
-    className="">
-    🚀 &nbsp; Live Demo
-                </a>
-              </div> */}
-          </div>
-        </div>
-      </div>
+    <img
+      className="w-[90%] md:w-[80%] rounded-xl blur-[5px]"
+      src="/photo2.jpg"
+      alt=""
+    />
+
+    <div className="absolute w-[80%] md:w-[70%]">
+
+      <video
+        className="w-full border rounded-md"
+        src="/p2.webm"
+        autoPlay
+        playsInline
+        muted
+        loop
+      />
+
+    </div>
+
+  </div>
+
+</div>
 
       <br />
 
-      <div className="flex panel transform-gpu bg-[rgb(18,18,18)] pt-15 pb-25">
-        <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
-          <div>
+<div className="flex flex-col lg:flex-row panel transform-gpu bg-[rgb(18,18,18)] py-16 gap-10">
 
-            <h1 className="text-5xl font-bold pb-15">3. Edemy - LMS Platform</h1>
-            <p className="text-2xl text-gray-400 pb-15">Edemy is a Learning Management System (LMS) that allows users to explore courses, enroll in them, and track their learning progress. It provides an organized platform for managing educational content and improving the online learning experience.</p>
-          </div>
-          <div className="flex gap-30 justify-evenly items-center">
-            <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
-              <a
-                href="https://github.com/Rohit0265/Full-Stack-LMS-Platform"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
-  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
-              >
-                <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
-                <p>View on GitHub</p>
-              </a>
-            </div>
-            {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
-          transition-all duration-300 text-white font-semibold 
-          shadow-lg hover:shadow-blue-500/40">
-                  <a href="YOUR_LIVE_LINK" target="_blank"
-    className="">
-    🚀 &nbsp; Live Demo
-                </a>
-              </div> */}
-          </div>
-        </div>
-        <div className="relative w-1/2">
-          <img className="w-200 rounded-xl blur-[5px] my-auto mx-auto h-130 object-cover" src="2.webp" alt="" />
+  {/* VIDEO SIDE */}
+  <div className="relative w-full lg:w-1/2 flex justify-center items-center">
 
-          <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video
-              className="w-150 h-fill border scroll-video overflow-hidden rounded-md"
-              src="/Edemy.webm"
-              autoPlay
-              playsInline
-              muted
-              loop
-            />
-          </div>
-        </div>
-      </div>
+<img
+  className="w-[90%] md:w-[80%] rounded-xl blur-[5px]"
+  src="/be.jpg"
+  alt=""
+/>
+
+    <div className="absolute w-[80%] md:w-[70%]">
+
+      <video
+        className="w-full border rounded-md scroll-video"
+        src="/Ecomm.webm"
+        autoPlay
+        playsInline
+        muted
+        loop
+      />
+
+    </div>
+
+  </div>
+
+
+  {/* TEXT SIDE */}
+  <div className="w-full lg:w-1/2 flex flex-col justify-center text-white px-6 lg:pl-20">
+
+    <div>
+
+      <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6">
+        2. Full Stack Ecommerce Web Application
+      </h1>
+
+      <p className="text-base md:text-lg lg:text-2xl text-gray-400 mb-8">
+        Developed a full-stack eCommerce web application with features like
+        user authentication, product listing, cart management, and order
+        processing. The platform provides a seamless shopping experience
+        with a responsive interface and secure backend APIs.
+      </p>
+
+    </div>
+
+
+    {/* BUTTON */}
+    <div className="flex flex-wrap gap-4 items-center">
+
+      <a
+        href="https://github.com/Rohit0265/Full-Stack-E-Commerce-Platform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 bg-gray-900 border border-white rounded-xl px-5 py-3 hover:bg-gray-700 transition"
+      >
+        <img src="/github.svg" className="w-6 h-6 invert" />
+        View GitHub
+      </a>
+
+
+
+    </div>
+
+  </div>
+
+</div>
 
       <br />
 
-      <div className="flex transform-gpu panel bg-[rgb(18,18,18)] pt-15 pb-25">
+<div className="flex flex-col lg:flex-row panel transform-gpu bg-[rgb(18,18,18)] py-16 gap-10">
 
-        <div className="relative w-1/2">
-          <img className="w-200 rounded-xl my-auto blur-[5px] mx-auto h-130 object-cover" src="3.webp" alt="" />
+  {/* VIDEO SIDE */}
+  <div className="relative w-full lg:w-1/2 flex justify-center items-center min-h-[420px] md:min-h-[520px] order-1 lg:order-2">
 
-          <div className="absolute w-150 h-80 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-            <video
-              className="w-150 h-fill border overflow-hidden rounded-md"
-              src="/VulnsWeb.webm"
-              autoPlay
-              playsInline
-              muted
-              loop
-            />
-          </div>
-        </div>
-        <div className="w-1/2 items-center justify-center flex flex-col text-white pl-50">
-          <div>
+    <img
+      className="w-[90%] md:w-[80%] h-full object-cover rounded-xl blur-[5px]"
+      src="2.webp"
+      alt=""
+    />
 
-            <h1 className="text-5xl font-bold pb-15">4. Vulns Web : Website Vulnerability Scanner</h1>
-            <p className="text-2xl text-gray-400 pb-15">Vulns Web is a website vulnerability scanner designed to detect common security flaws such as XSS, SQL Injection, and Path Traversal. It analyzes web applications and highlights potential risks to help developers strengthen their security.</p>
-          </div>
-          <div className="flex gap-30 justify-evenly items-center">
-            <div className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl justify-center items-center hover:bg-gray-700 w-50 h-15 gap-2">
-              <a
-                href="https://github.com/Rohit0265/Website-Vulnerability-Tester-FrontEnd"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex cursor-pointer bg-gray-900 border-2 border-white rounded-xl 
-  justify-center items-center hover:bg-gray-700 w-[200px] h-[60px] gap-3"
-              >
-                <img src="/github.svg" className="w-8 h-8 invert" alt="GitHub" />
-                <p>View on GitHub</p>
-              </a>
-            </div>
-            {/* <div className="w-50 h-15 bg-blue-600 rounded-xl flex justify-center items-center hover:bg-blue-600 
-          transition-all duration-300 text-white font-semibold 
-          shadow-lg hover:shadow-blue-500/40">
-                  <a href="YOUR_LIVE_LINK" target="_blank"
-    className="">
-    🚀 &nbsp; Live Demo
-                </a>
-              </div> */}
-          </div>
-        </div>
-      </div>
+    <div className="absolute w-[80%] md:w-[70%]">
+
+      <video
+        className="w-full border rounded-md scroll-video"
+        src="/Edemy.webm"
+        autoPlay
+        playsInline
+        muted
+        loop
+      />
+
+    </div>
+
+  </div>
+
+
+  {/* TEXT SIDE */}
+  <div className="w-full lg:w-1/2 flex flex-col justify-center text-white px-6 lg:pl-20 order-2 lg:order-1">
+
+    <div>
+
+      <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6">
+        3. Edemy - LMS Platform
+      </h1>
+
+      <p className="text-base md:text-lg lg:text-2xl text-gray-400 mb-8">
+        Edemy is a Learning Management System (LMS) that allows users to
+        explore courses, enroll in them, and track their learning progress.
+        It provides an organized platform for managing educational content
+        and improving the online learning experience.
+      </p>
+
+    </div>
+
+
+    {/* BUTTON */}
+    <div className="flex flex-wrap gap-4 items-center">
+
+      <a
+        href="https://github.com/Rohit0265/Full-Stack-LMS-Platform"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 bg-gray-900 border border-white rounded-xl px-5 py-3 hover:bg-gray-700 transition"
+      >
+        <img src="/github.svg" className="w-6 h-6 invert" />
+        View GitHub
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+      <br />
+
+<div className="flex flex-col lg:flex-row transform-gpu panel bg-[rgb(18,18,18)] py-16 gap-10">
+
+  {/* VIDEO SIDE */}
+  <div className="relative w-full lg:w-1/2 flex justify-center items-center min-h-[420px] md:min-h-[520px]">
+
+    <img
+      className="w-[90%] md:w-[80%] h-full object-cover rounded-xl blur-[5px]"
+      src="/bee.jpg"
+      alt=""
+    />
+
+    <div className="absolute w-[80%] md:w-[70%]">
+
+      <video
+        className="w-full border rounded-md"
+        src="/VulnsWeb.webm"
+        autoPlay
+        playsInline
+        muted
+        loop
+      />
+
+    </div>
+
+  </div>
+
+
+  {/* TEXT SIDE */}
+  <div className="w-full lg:w-1/2 flex flex-col justify-center text-white px-6 lg:pl-20">
+
+    <div>
+
+      <h1 className="text-2xl md:text-3xl lg:text-5xl font-bold mb-6">
+        4. Vulns Web : Website Vulnerability Scanner
+      </h1>
+
+      <p className="text-base md:text-lg lg:text-2xl text-gray-400 mb-8">
+        Vulns Web is a website vulnerability scanner designed to detect
+        common security flaws such as XSS, SQL Injection, and Path Traversal.
+        It analyzes web applications and highlights potential risks to help
+        developers strengthen their security.
+      </p>
+
+    </div>
+
+
+    {/* BUTTON */}
+    <div className="flex flex-wrap gap-4 items-center">
+
+      <a
+        href="https://github.com/Rohit0265/Website-Vulnerability-Tester-FrontEnd"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-3 bg-gray-900 border border-white rounded-xl px-5 py-3 hover:bg-gray-700 transition"
+      >
+        <img src="/github.svg" className="w-6 h-6 invert" />
+        View GitHub
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
 
 
 

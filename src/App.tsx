@@ -19,7 +19,7 @@ const App = () => {
 
 
   return (
-    <div id="smooth-wrapper">
+    <div id="smooth-wrapper ">
       <div id="smooth-content">
         {/* <Navbar/> */}
         <MyIntro />

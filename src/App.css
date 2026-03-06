@@ -17,6 +17,14 @@
   font-style: normal;
 }
 
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body{
   background-color: black;
 }

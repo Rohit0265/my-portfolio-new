@@ -25,16 +25,19 @@ const MyIntro = () => {
     //   effects: true,
     // });
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".test",
-        start: "top top",
-        end: "+=100%",
-        scrub: 1.5,
-        pin: true,
-        markers: false,
-      },
-    });
+    if (window.innerWidth <= 764) return;
+const tl = gsap.timeline({
+
+
+  scrollTrigger: {
+    trigger: ".test",
+    start: "top top",
+    end: "+=200%",
+    scrub: 1,
+    pin: true,
+    pinSpacing: true,
+  },
+});
 
     // 1️⃣ Small pause
     // tl.to({}, { duration: 0.5 });
@@ -70,24 +73,25 @@ const MyIntro = () => {
     <div ref={container}>
 
 
-      <div className="test w-screen h-screen relative overflow-hidden bg-black">
-        <img
-          className="w-full h-full object-cover transform-gpu will-change-transform"
-          src="https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
-          alt=""
-        />
-        {/* Hardware-accelerated blur overlay */}
-        <div className="blur-overlay absolute inset-0 backdrop-blur-[20px] opacity-0 transform-gpu will-change-opacity pointer-events-none z-10"></div>
+<div className="test w-full h-screen relative overflow-hidden bg-black">
+  <img
+    className="w-full h-full object-cover transform-gpu will-change-transform"
+    src="https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+  />
 
-        <h1 className="head absolute z-50 text-gray-300/90 text-[200px] leading-tight left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2 ">
-          𝓗𝓔𝓛𝓛𝓞
-        </h1>
-      </div>
+  <div className="blur-overlay absolute inset-0 backdrop-blur-[20px] opacity-0 pointer-events-none z-10" />
+
+  <h1 className="head absolute z-50 text-gray-300/90
+    text-[70px] sm:text-[100px] md:text-[150px] lg:text-[200px]
+    left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2">
+    𝓗𝓔𝓛𝓛𝓞
+  </h1>
+</div>
 
       {/* Extra space to allow scrolling */}
       <Mylandpage />
       <Myprojects />
-      <div className="h-[500px] bg-black" />
+      <div className="hidden md:block md:h-[500px]  bg-black" />
       <MYDETAILS />
       {/* <div className="h-[200px]" /> */}
       <ContactForm />
