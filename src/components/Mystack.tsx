@@ -63,7 +63,7 @@ const MYDETAILS = () => {
         //   viewport={{ once: true }}
           className="text-[70px] text-white text-center uppercase relative font-extrabold"
         >
-          what do i do
+          what i do
           <div className="h-[2px] bottom-[19px] right-31 absolute bg-red-50 w-122"/>
         </motion.h1>
 

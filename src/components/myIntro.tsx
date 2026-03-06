@@ -29,7 +29,7 @@ const MyIntro = () => {
       scrollTrigger: {
         trigger: ".test",
         start: "top top",
-        end: "+=300%",
+        end: "+=100%",
         scrub: 1.5,
         pin: true,
         markers: false,
@@ -37,25 +37,28 @@ const MyIntro = () => {
     });
 
     // 1️⃣ Small pause
-    tl.to({}, { duration: 0.5 });
+    // tl.to({}, { duration: 0.5 });
 
-    // 2️⃣ Blur background
+    // 2️⃣ Blur background - Optimized using opacity fade on a pre-blurred overlay
     tl.to(".test img", {
-      filter: "blur(20px)",
       scale: 1.15,
       ease: "none",
     });
+    tl.to(".blur-overlay", {
+      opacity: 1,
+      ease: "none",
+    }, "<");
 
     // 3️⃣ Move text up
     tl.to(".head", {
-      y: -250,
+      y: -200,
       opacity: 0,
       ease: "none",
     });
 
     // 4️⃣ Move image up
-    tl.to(".test img", {
-      y: -200,
+    tl.to([".test img", ".blur-overlay"], {
+      y: -150,
       ease: "none",
     });
 
@@ -64,30 +67,32 @@ const MyIntro = () => {
   return (
     // <div id="smooth-wrapper" ref={container}>
     //   <div id="smooth-content">
-<div ref={container}>
+    <div ref={container}>
 
 
-        <div className="test w-screen h-screen relative overflow-hidden">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
-            alt=""
-          />
+      <div className="test w-screen h-screen relative overflow-hidden bg-black">
+        <img
+          className="w-full h-full object-cover transform-gpu will-change-transform"
+          src="https://images.pexels.com/photos/316681/pexels-photo-316681.jpeg"
+          alt=""
+        />
+        {/* Hardware-accelerated blur overlay */}
+        <div className="blur-overlay absolute inset-0 backdrop-blur-[20px] opacity-0 transform-gpu will-change-opacity pointer-events-none z-10"></div>
 
-          <h1 className="head absolute z-50 text-gray-300/90 text-[200px] leading-tight left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2 ">
-            𝓗𝓔𝓛𝓛𝓞
-          </h1>
-        </div>
+        <h1 className="head absolute z-50 text-gray-300/90 text-[200px] leading-tight left-1/2 top-2/5 -translate-x-1/2 -translate-y-1/2 ">
+          𝓗𝓔𝓛𝓛𝓞
+        </h1>
+      </div>
 
-        {/* Extra space to allow scrolling */}
-        <Mylandpage/>
-      <Myprojects/>
-        <div className="h-[500px]" />
-        <MYDETAILS/>
-        <div className="h-[200px]" />
-        <ContactForm/>
-        <Fotter/>
-</div>
+      {/* Extra space to allow scrolling */}
+      <Mylandpage />
+      <Myprojects />
+      <div className="h-[500px] bg-black" />
+      <MYDETAILS />
+      {/* <div className="h-[200px]" /> */}
+      <ContactForm />
+      <Fotter />
+    </div>
     //   {/* </div>
     // </div> */}
   );

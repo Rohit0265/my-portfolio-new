@@ -1,10 +1,10 @@
 // @ts-nocheck
 
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import Button from "./ui/button"
 import emailjs from "@emailjs/browser"; 
 import { toast } from "sonner"
-import {motion} from "framer-motion"
+import {motion, useScroll, useTransform} from "framer-motion"
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -33,8 +33,21 @@ const handleSubmit = (e) => {
   );
 };
 
+
+  const ref = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start end", "end start"]
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.9]);
+
   return (
-    <div className='h-screen bg-black text-white'>
+    <motion.div
+    ref={ref}
+    style={{scale}}
+    className='h-screen bg-black text-white'>
 
         <motion.h2 
         initial={{ opacity: 0, x: -100 }}
@@ -46,7 +59,7 @@ const handleSubmit = (e) => {
     <motion.form 
     initial={{ opacity: 0, x: 100 }}
     whileInView={{ opacity: 1, x: 0 }}
-    transition={{ duration: 0.2,delay:0.2 }}
+    transition={{ duration: 1,delay:0.2 }}
     
     className='flex flex-col pl-25 pr-25 pt-5 pb-7' onSubmit={handleSubmit}>
         <p className='text-[40px] text-center pb-5'>Say Hello 👋 !!!</p>
@@ -58,7 +71,7 @@ const handleSubmit = (e) => {
       <Button size="lg" className='bg-white text-[20px] font-bold pt-2 pb-2 mt-8 text-black'>Button</Button>
     </motion.form>
     </div>
-    </div>
+    </motion.div>
   );
 };
 
