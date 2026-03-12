@@ -129,6 +129,8 @@ const Myprojects = () => {
     </div>
   </section>
 </div>
+
+
 <div className="flex flex-col lg:flex-row panel transform-gpu bg-[rgb(18,18,18)] mt-10 pb-20 gap-10">
 
   {/* TEXT SIDE */}
@@ -320,13 +322,20 @@ const Myprojects = () => {
     <div className="flex flex-wrap gap-4 items-center">
 
       <a
-        href="https://github.com/Rohit0265/Full-Stack-LMS-Platform"
+        href="https://github.com/Rohit0265/my-portfolio-new"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center gap-3 bg-gray-900 border border-white rounded-xl px-5 py-3 hover:bg-gray-700 transition"
       >
         <img src="/github.svg" className="w-6 h-6 invert" />
         View GitHub
+      </a>
+        <a
+        href="https://edmey-full-stack-lms-platform.vercel.app"
+        target="_blank"
+        className="px-6 py-3 bg-blue-600 rounded-xl text-white font-semibold hover:bg-blue-500 transition"
+      >
+        🚀 Live Demo
       </a>
 
     </div>
